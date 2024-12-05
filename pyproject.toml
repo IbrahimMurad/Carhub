@@ -13,6 +13,17 @@ authors = [
 license = "MIT"
 readme = "README.md"
 keywords = ["car", "agency", "website", "django", "python", "quickbooks"]
+dependencies = [
+  "python = ^3.12",
+  "django",
+]
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "flake8",
+  "mypy"
+]
 
 
 [tool.black]
