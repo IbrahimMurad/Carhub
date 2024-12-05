@@ -16,6 +16,7 @@ keywords = ["car", "agency", "website", "django", "python", "quickbooks"]
 dependencies = [
   "python = ^3.12",
   "django",
+  "django-environ",
 ]
 
 [project.optional-dependencies]
