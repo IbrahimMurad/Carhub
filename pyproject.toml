@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Carhub"
+version = "0.1.0"
+description = "A car agency website"
+authors = [
+    {name = "IbrahimMorad", email = "ibrahimmorad31@gmail.com"},
+		{name = "HassaanAlansary", email = "hassaan.alansary@example.com"},
+]
+license = "MIT"
+readme = "README.md"
+keywords = ["car", "agency", "website", "django", "python", "quickbooks"]
+
+
+[tool.black]
+line-length = 88
+target-version = ['py312']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
