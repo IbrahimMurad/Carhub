@@ -1,5 +1,5 @@
 """
-Django settings for Carhub project.
+Django settings for carhub project.
 """
 
 import os
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "Carhub.urls"
+ROOT_URLCONF = "carhub.urls"
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "Carhub.wsgi.application"
+WSGI_APPLICATION = "carhub.wsgi.application"
 
 
 # Database
@@ -126,5 +126,3 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
-AUTH_USER_MODEL = "users.User"

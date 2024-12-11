@@ -15,15 +15,14 @@ readme = "README.md"
 keywords = ["car", "agency", "website", "django", "python", "quickbooks"]
 dependencies = [
   "python = ^3.12",
-  "django",
-  "django-environ",
+  "django = 5.1.4",
+  "django-environ = 0.11.2",
 ]
 
 [project.optional-dependencies]
 dev = [
-  "black",
-  "flake8",
-  "mypy"
+  "black = 24.10.0",
+  "flake8 = 7.1.1"
 ]
 
 
